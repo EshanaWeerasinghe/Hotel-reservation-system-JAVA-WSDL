@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8084/HMS/NewWebService?wsdl" uri="wsdl/localhost_8084/HMS/NewWebService.wsdl"/>
+    <system systemId="http://localhost:8084/HMS/NewWebService?xsd=1" uri="wsdl/localhost_8084/HMS/NewWebService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8084/HotelServer/Hotel?wsdl" uri="wsdl/localhost_8084/HotelServer/Hotel.wsdl"/>
+    <system systemId="http://localhost:8084/HotelServer/Hotel?xsd=1" uri="wsdl/localhost_8084/HotelServer/Hotel.xsd_1.xsd"/>
+</catalog>
