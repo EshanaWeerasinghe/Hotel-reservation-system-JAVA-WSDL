@@ -1,0 +1,230 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://webService.hotel.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://webService.hotel.com/">
+
+<xs:element name="AddEmployee" type="tns:AddEmployee" />
+
+<xs:element name="AddEmployeeResponse" type="tns:AddEmployeeResponse" />
+
+<xs:element name="AddHotel" type="tns:AddHotel" />
+
+<xs:element name="AddHotelResponse" type="tns:AddHotelResponse" />
+
+<xs:element name="AddNewCustomer" type="tns:AddNewCustomer" />
+
+<xs:element name="AddNewCustomerResponse" type="tns:AddNewCustomerResponse" />
+
+<xs:element name="BooksRooms" type="tns:BooksRooms" />
+
+<xs:element name="BooksRoomsResponse" type="tns:BooksRoomsResponse" />
+
+<xs:element name="CustomerLogin" type="tns:CustomerLogin" />
+
+<xs:element name="CustomerLoginResponse" type="tns:CustomerLoginResponse" />
+
+<xs:element name="GetAllHotels" type="tns:GetAllHotels" />
+
+<xs:element name="GetAllHotelsResponse" type="tns:GetAllHotelsResponse" />
+
+<xs:element name="GetEmployeeCategoryWithId" type="tns:GetEmployeeCategoryWithId" />
+
+<xs:element name="GetEmployeeCategoryWithIdResponse" type="tns:GetEmployeeCategoryWithIdResponse" />
+
+<xs:element name="GetEmployees" type="tns:GetEmployees" />
+
+<xs:element name="GetEmployeesResponse" type="tns:GetEmployeesResponse" />
+
+<xs:element name="GetHotelDetails" type="tns:GetHotelDetails" />
+
+<xs:element name="GetHotelDetailsResponse" type="tns:GetHotelDetailsResponse" />
+
+<xs:element name="GetHotelRoomsAvailability" type="tns:GetHotelRoomsAvailability" />
+
+<xs:element name="GetHotelRoomsAvailabilityResponse" type="tns:GetHotelRoomsAvailabilityResponse" />
+
+<xs:element name="GetHotelsWithId" type="tns:GetHotelsWithId" />
+
+<xs:element name="GetHotelsWithIdResponse" type="tns:GetHotelsWithIdResponse" />
+
+<xs:element name="Login" type="tns:Login" />
+
+<xs:element name="LoginResponse" type="tns:LoginResponse" />
+
+<xs:element name="getRoomsOrders" type="tns:getRoomsOrders" />
+
+<xs:element name="getRoomsOrdersResponse" type="tns:getRoomsOrdersResponse" />
+
+<xs:complexType name="GetEmployeeCategoryWithId">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="GetEmployeeCategoryWithIdResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AddNewCustomer">
+<xs:sequence>
+<xs:element name="firstName" type="xs:string" minOccurs="0" />
+<xs:element name="lastName" type="xs:string" minOccurs="0" />
+<xs:element name="mobile" type="xs:string" minOccurs="0" />
+<xs:element name="email" type="xs:string" minOccurs="0" />
+<xs:element name="userName" type="xs:string" minOccurs="0" />
+<xs:element name="passWord" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AddNewCustomerResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Login">
+<xs:sequence>
+<xs:element name="Username" type="xs:string" minOccurs="0" />
+<xs:element name="Password" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="LoginResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getRoomsOrders">
+<xs:sequence>
+<xs:element name="hotel_id" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getRoomsOrdersResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GetHotelRoomsAvailability">
+<xs:sequence>
+<xs:element name="hotel_id" type="xs:int" />
+<xs:element name="rooms_category_id" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GetHotelRoomsAvailabilityResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CustomerLogin">
+<xs:sequence>
+<xs:element name="Username" type="xs:string" minOccurs="0" />
+<xs:element name="Password" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CustomerLoginResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BooksRooms">
+<xs:sequence>
+<xs:element name="hotel_id" type="xs:int" />
+<xs:element name="customer_id" type="xs:int" />
+<xs:element name="rooms_category_id" type="xs:int" />
+<xs:element name="no_of_rooms" type="xs:int" />
+<xs:element name="from_date" type="xs:string" minOccurs="0" />
+<xs:element name="to_date" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BooksRoomsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GetEmployees">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="GetEmployeesResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GetAllHotels">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="GetAllHotelsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AddHotel">
+<xs:sequence>
+<xs:element name="Name" type="xs:string" minOccurs="0" />
+<xs:element name="Location" type="xs:string" minOccurs="0" />
+<xs:element name="No_Of_Single_Rooms" type="xs:int" />
+<xs:element name="No_Of_Double_Rooms" type="xs:int" />
+<xs:element name="No_Of_Family_Rooms" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AddHotelResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GetHotelDetails">
+<xs:sequence>
+<xs:element name="hotel_id" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GetHotelDetailsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AddEmployee">
+<xs:sequence>
+<xs:element name="firstName" type="xs:string" minOccurs="0" />
+<xs:element name="lastName" type="xs:string" minOccurs="0" />
+<xs:element name="AddressL1" type="xs:string" minOccurs="0" />
+<xs:element name="AddressL2" type="xs:string" minOccurs="0" />
+<xs:element name="AddressCity" type="xs:string" minOccurs="0" />
+<xs:element name="AddressPC" type="xs:string" minOccurs="0" />
+<xs:element name="Nic" type="xs:string" minOccurs="0" />
+<xs:element name="Mobile" type="xs:string" minOccurs="0" />
+<xs:element name="Emp_Category_id" type="xs:int" />
+<xs:element name="Hotel_Id" type="xs:int" />
+<xs:element name="UserName" type="xs:string" minOccurs="0" />
+<xs:element name="Password" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AddEmployeeResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GetHotelsWithId">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="GetHotelsWithIdResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
